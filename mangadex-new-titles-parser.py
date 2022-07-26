@@ -24,13 +24,13 @@ def get_link(data, title_id: int) -> str:
     return link
 
 
-# забираем описание (optional since Discord has a 4000 symbols limit per message)
+# fetching title's description (optional since Discord has a 4000 symbols limit per message)
 # def get_description(data, title_id: int) -> str:
 #     try:
 #         description = data['data'][title_id]['attributes']['description']['en']
 #         return description
 #     except (TypeError, KeyError):
-#         return 'Описания нет.'
+#         return 'No description.'
 
 
 def make_request():
